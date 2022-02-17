@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-17 06:58:51 PM"/>
+        <attribute name="created" value="QWRtaW47REVTS1RPUC1KMEM4Uk9IOzIwMjItMDItMTc7MDU6NDI6NDMgUE07MjgyOA=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC1KMEM4Uk9IOzIwMjItMDItMTc7MDU6NDk6NTkgUE07MjsyOTUx"/>
+        <attribute name="edited" value="S0FJRiBBSE1FRCBSO0xBUFRPUC1IU05TSFA3OTsyMDIyLTAyLTE3OzA2OjU4OjUxIFBNOzE7MzI2Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="firstnumber, secondnumber, succeedingnumber, count, noofterms" type="Integer" array="False" size=""/>
+            <assign variable="firstnumber" expression="0"/>
+            <assign variable="secondnumber" expression="1"/>
+            <assign variable="count" expression="0"/>
+            <assign variable="noofterms" expression="0"/>
+            <output expression="&quot;Enter the number of terms required&quot;" newline="True"/>
+            <input variable="noofterms"/>
+            <if expression="noofterms &lt;= 0">
+                <then>
+                    <output expression="&quot;Enter a positive integer&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Fibonacci Series&quot;" newline="True"/>
+                    <while expression="count &lt; noofterms">
+                        <output expression="firstnumber" newline="True"/>
+                        <assign variable="succeedingnumber" expression="firstnumber + secondnumber"/>
+                        <assign variable="firstnumber" expression="secondnumber"/>
+                        <assign variable="secondnumber" expression="succeedingnumber"/>
+                        <assign variable="count" expression="count + 1"/>
+                    </while>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

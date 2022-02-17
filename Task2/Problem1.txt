@@ -1,0 +1,27 @@
+Basically for a number to be divisible by 3, the sum of 
+its digits of the number should be divisible by 3
+
+DECLARE remainder = 0
+DECLARE number = 0
+DECLARE sum = 0
+
+print 'Enter the number'
+INPUT number
+
+WHILE number > 0
+	remainder = number % 10		//Using modulus operator with 10 we could
+					//extract each and every digit of a number
+
+	sum = sum + remainder		//Extracting digits from the entered number 
+					//and calculating the sum of them
+
+	number = number /10		//The number remains with the removed digit
+					//when divided by 10
+END LOOP
+
+IF sum % 3 == 0 THEN
+ 	print 'True'
+ELSE
+	print 'False'
+END ELSE
+END IF

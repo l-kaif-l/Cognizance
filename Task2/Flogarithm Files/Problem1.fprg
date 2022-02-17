@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-17 05:42:08 PM"/>
+        <attribute name="created" value="QWRtaW47REVTS1RPUC1KMEM4Uk9IOzIwMjItMDItMTc7MDU6MzY6NDggUE07MjgzNg=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC1KMEM4Uk9IOzIwMjItMDItMTc7MDU6NDI6MDggUE07MTsyOTM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="remainder, number, sum" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a number&quot;" newline="True"/>
+            <input variable="number"/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="remainder" expression="0"/>
+            <while expression="number &gt; 0">
+                <assign variable="remainder" expression="number % 10"/>
+                <assign variable="sum" expression="sum + remainder"/>
+                <assign variable="number" expression="number / 10"/>
+            </while>
+            <if expression="sum % 3 == 0">
+                <then>
+                    <output expression="&quot;True&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;False&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

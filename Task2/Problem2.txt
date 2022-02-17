@@ -1,0 +1,25 @@
+DECLARE first_number = 0		//Declaring values for variables
+DECLARE second_number = 1
+DECLARE count = 0
+DECLARE no_of_terms = 0			//Assigned 0 to avoid garbage value
+
+print 'Enter the number of terms required'
+INPUT no_of_terms 				//Gettiing the value from user
+
+IF no_of_terms <= 0 THEN
+ 	print 'Enter a positive integer'
+ELSE
+	print 'Fibonacci Series'
+	WHILE count < no_of_terms 		
+		OUTPUT first_number		// Print the values of first_number for very iteration
+
+		succeeding_number = first_number + second_number	//As we know that in a Fibonacci series the succeeding number is 
+									//equal to the sum of the preceeding two numbers 
+		
+		first_number = second_number		//Swaping values of first_number 
+		second_number = succeeding_number	//and second_number for next iteration
+		
+		count = count + 1			//Increment count value by 1 for every iteration
+	END LOOP
+END ELSE
+END IF
