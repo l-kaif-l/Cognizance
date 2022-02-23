@@ -1,10 +1,18 @@
-# Importing pandas library into the program with the object name or reference as pd
+
 import pandas as pd
-# Creating a List
-d = [["Abc", 12, 95],
-     ["Def", 11, 88],
-     ["Ghi", 14, 90]]
-df= pd.DataFrame(d, index=[1, 2, 3], columns=["Name", "Roll Number", "Marks"])
+table = []
+
+count = int(input("Enter number of students: "))
+
+for i in range(0,3):
+    print("Enter details of each student in R.No., Name, Marks format: \n")
+    table.append([])
+    for j in range(0, count):
+        Enter_details = input()
+        table[i].append(Enter_details)
+
+print(table)
+df = pd.DataFrame(table, index=[1, 2, 3], columns=["R.No.", "Name", "Marks"])
 print(df)
-#Printing the second row/ record from the table created
 print(df[1:2])
+
