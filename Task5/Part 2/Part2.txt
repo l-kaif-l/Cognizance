@@ -39,5 +39,3 @@
 	• Read(r) – Allowed to read the file
 	• Write(w) – Allowed to change the content of the file
 	• Execute – Allowed to use the file as a command
-	• Delete – Allowed to move the file to trash
-	
