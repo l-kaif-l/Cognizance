@@ -27,7 +27,7 @@ is the main moto of our company to provide our clients with their data.
 > <b><span style="color: #FAFAD2 ; font-size: 1.4rem;">**Future Improvements**</span></b>
 
 * **Because of cloud storage's increasing popularity and use, cloud security has become a major concern to protect data integrity, prevent hacking attempts, and avoid file or identity theft.** 
-    * **So we will assure and increase the security measures such that our clients data is not been accessed by any other peoples without permission.**
+    * **So we will assure and increase the security measures such that our client's data is not been accessed by any other people without permission.**
 * **We will try to provide more data plans at cheaper rates.**
 * **We will implement Decentralized data concepts in our future updates.**
 ---
