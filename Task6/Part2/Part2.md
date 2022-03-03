@@ -15,8 +15,7 @@
 * *__Available__*
 * *__Performant__*
 * *__Open Source__*
-<br>
-----
+---
 
 > <b><span style="color: #FAFAD2 ; font-size: 1.4rem;">**Motivaton**</span></b>
 
