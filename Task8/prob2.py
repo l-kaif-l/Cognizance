@@ -23,3 +23,13 @@ B = np.array(b)
 print("Array A ==", A, "\nArray B ==", B)
 # Returns True if arrays are equal, False if arrays are not equal
 print(np.array_equal(A, B))
+
+
+
+# Generating Random arrays
+A = np.random.randint(1,10,size=(1,5))
+B = np.random.randint(1,10,size=(1,5))
+print("Array A ==", A, "\nArray B ==", B)
+# Returns True if arrays are equal, False if arrays are not equal
+print(np.array_equal(A, B))
+
